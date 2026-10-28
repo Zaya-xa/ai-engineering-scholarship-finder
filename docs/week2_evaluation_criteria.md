@@ -1,0 +1,9 @@
+# Evaluation Criteria — AI Scholarship Finder
+
+| Objective / Requirement ID | Evaluation Criterion | Capability Bucket | Measurement Method | Metric | Threshold | User / Business Outcome |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **O3 / NFR2** | Eligibility Answer Accuracy | Domain-specific capability | Benchmark 30 complex eligibility queries against official PDF ground truth. | Correct response rate | ≥ 85% | Students receive trustworthy information on whether they qualify for funding. |
+| **O1 / FR3 / RAI4** | Grounding & Source Citation | Instruction-following capability | Inspect generated answers to confirm exact PDF page/section citations are provided. | Citation presence rate; Source match rate | 100% presence; ≥95% match | Students can independently verify scholarship terms directly against official documents. |
+| **O2 / RAI2** | Scope Boundaries & Refusals | Instruction-following capability | Submit 20 out-of-scope queries (e.g., loan requests, course advice, general chat). | Refusal-and-redirect success rate | ≥ 95% | Prevents students from receiving unreliable advice on topics outside financial aid. |
+| **O3 / NFR1** | Query Response Latency | Cost and latency | Log total time from query submission to complete response display. | p90 latency | < 3 seconds | Students experience smooth, responsive interactions without long delays. |
+| **O1 / FR2** | Deadline Precision | Domain-specific capability | Test system retrieval on critical dates across all indexed scholarship PDFs. | Deadline extraction accuracy | 100% | Eliminates missed application deadlines caused by fabricated dates. |
